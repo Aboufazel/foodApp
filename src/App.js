@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Container from "./container/container";
+import {CssBaseline} from "@mui/material";
+import MenuAppBar from "./appHeader/menuAppBar";
+import FoodSlider from "./slider/slider";
+import MainBody from "./mainBody/mainBody";
+import BottomAppBar from "./appHeader/bottomAppBar";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <React.Fragment>
+            <CssBaseline/>
+            <Container>
+                <MenuAppBar/>
+                <FoodSlider/>
+                <MainBody/>
+                <BottomAppBar/>
+            </Container>
+        </React.Fragment>
+    );
 }
 
 export default App;
