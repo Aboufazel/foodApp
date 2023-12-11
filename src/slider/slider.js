@@ -2,7 +2,6 @@ import {Box} from "@mui/material";
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import sliderImg from "../asset/appBanner.png"
-import dailyOfferImg from "../asset/dailyOffer.png"
 const FoodSlider = () => {
     const [sliderRef] = useKeenSlider(
         {
