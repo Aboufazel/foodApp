@@ -1,6 +1,5 @@
 import {Outlet} from "react-router-dom";
 import {CssBaseline} from "@mui/material";
-import Container from "../container/container";
 import MenuAppBar from "../appHeader/menuAppBar";
 import BottomAppBar from "../appHeader/bottomAppBar";
 import React from "react";
