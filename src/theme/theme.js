@@ -41,62 +41,65 @@ const theme = createTheme({
         },
     },
     typography: {
-        h1: {
+        fontFamily:[
+            'Baloo Bhai',
+        ].join(','),
+        h1:{
             fontSize: "56px",
             fontWeight: 700,
             lineHeight: "137.5%",
         },
-        h2: {
+        h2:{
             fontSize: "48px",
             fontWeight: 700,
             lineHeight: "137.5%",
         },
-        h3: {
+        h3:{
             fontSize: "36px",
             fontWeight: 700,
             lineHeight: "137.5%",
         },
-        h4: {
+        h4:{
             fontSize: "32px",
             fontWeight: 700,
             lineHeight: "137.5%",
         },
-        h5: {
+        h5:{
             fontSize: "24px",
             fontWeight: 500,
             lineHeight: "137.5%",
         },
-        h6: {
+        h6:{
             fontSize: "18px",
             fontWeight: 500,
             lineHeight: "137.5%",
         },
-        subtitle1: {
+        subtitle1:{
             fontSize: "16px",
             fontWeight: 500,
             lineHeight: "175%",
         },
-        subtitle2: {
+        subtitle2:{
             fontSize: "14px",
             fontWeight: 500,
             lineHeight: "157%",
         },
-        body1: {
+        body1:{
             fontSize: "16px",
             fontWeight: 400,
             lineHeight: "157%",
         },
-        body2: {
+        body2:{
             fontSize: "14px",
             fontWeight: 400,
             lineHeight: "157%",
         },
-        caption: {
+        caption:{
             fontSize: "12px",
             fontWeight: 400,
             lineHeight: "166%",
         },
-        overline: {
+        overline:{
             fontSize: "12px",
             fontWeight: 500,
             lineHeight: "250%",

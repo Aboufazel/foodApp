@@ -2,12 +2,14 @@ import {Box} from "@mui/material";
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import sliderImg from "../asset/appBanner.png"
+import frame from "../asset/Frame 3.png"
+import {Link} from "react-router-dom";
 const FoodSlider = () => {
     const [sliderRef] = useKeenSlider(
         {
             loop: true,
             slides: {
-                perView: 1.5,
+                perView: 1.32,
                 spacing: 15,
             },
         },
@@ -48,17 +50,17 @@ const FoodSlider = () => {
              alignItems={"center"}
              sx={{bgcolor:"white" , paddingX:"15px" ,   borderBottomRightRadius:"25px" , borderBottomLeftRadius:"25px"}}>
             <div ref={sliderRef} className="keen-slider">
-                <div className="keen-slider__slide">
+                <Link to={'/bmi'} className="keen-slider__slide">
                     <img src={sliderImg} style={{width:"261px" , height:"80px"}} alt={"food-app-slider"}/>
+                </Link>
+                <div className="keen-slider__slide">
+                    <img src={frame} style={{width:"261px" , height:"80px"}} alt={"food-app-slider"}/>
                 </div>
                 <div className="keen-slider__slide">
                     <img src={sliderImg} style={{width:"261px" , height:"80px"}} alt={"food-app-slider"}/>
                 </div>
                 <div className="keen-slider__slide">
-                    <img src={sliderImg} style={{width:"261px" , height:"80px"}} alt={"food-app-slider"}/>
-                </div>
-                <div className="keen-slider__slide">
-                    <img src={sliderImg} style={{width:"261px" , height:"80px"}} alt={"food-app-slider"}/>
+                    <img src={frame} style={{width:"261px" , height:"80px"}} alt={"food-app-slider"}/>
                 </div>
             </div>
         </Box>

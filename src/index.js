@@ -5,12 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {ThemeProvider} from "@mui/material";
 import theme from "../src/theme/theme"
+import {QueryClientProvider} from "@tanstack/react-query";
+import {queryClient} from "./client"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <ThemeProvider theme={theme}>
-            <App/>
-        </ThemeProvider>
+        <QueryClientProvider client={queryClient}>
+            <ThemeProvider theme={theme}>
+                <App/>
+            </ThemeProvider>
+        </QueryClientProvider>
     </React.StrictMode>
 );
 

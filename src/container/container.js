@@ -10,8 +10,8 @@ const Container = ({children}) => {
             <Box
                 sx={{bgcolor:"#F2F5FC" ,
                     height:"100%" ,
-                    minWidth:"420px" ,
-                    maxWidth:"400px"}}>
+                    minWidth:"320px" ,
+                    maxWidth:"450px"}}>
                 {children}
             </Box>
         </Box>
