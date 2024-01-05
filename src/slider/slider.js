@@ -56,9 +56,9 @@ const FoodSlider = () => {
                 <div className="keen-slider__slide">
                     <img src={frame} style={{width:"261px" , height:"80px"}} alt={"food-app-slider"}/>
                 </div>
-                <div className="keen-slider__slide">
+                <Link to={'/bmi'} className="keen-slider__slide">
                     <img src={sliderImg} style={{width:"261px" , height:"80px"}} alt={"food-app-slider"}/>
-                </div>
+                </Link>
                 <div className="keen-slider__slide">
                     <img src={frame} style={{width:"261px" , height:"80px"}} alt={"food-app-slider"}/>
                 </div>

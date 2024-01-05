@@ -8,6 +8,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
+import {Link} from "react-router-dom";
 
 export default function MenuAppBar() {
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -21,21 +22,26 @@ export default function MenuAppBar() {
     };
 
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            <AppBar sx={{bgcolor:"white", boxShadow:"none"}} position="static">
+        <Box sx={{flexGrow: 1}}>
+            <AppBar sx={{bgcolor: "white", boxShadow: "none"}} position="static">
                 <Toolbar>
                     <IconButton
                         size="large"
                         edge="start"
                         color="inherit"
                         aria-label="menu"
-                        sx={{ mr: 2 }}
+                        sx={{mr: 2}}
                     >
-                        <MenuIcon sx={{color:"#333333"}}/>
+                        <MenuIcon sx={{color: "#333333"}}/>
                     </IconButton>
-                    <Typography variant="h6" textAlign={"center"} component="div" sx={{ flexGrow: 1 , fontWeight:"bold" ,color:"#333333" }}>
-                        Home
+
+                    <Typography variant="h6" textAlign={"center"} component="div"
+                                sx={{flexGrow: 1, fontWeight: "bold", color: "#333333"}}>
+                        <Link to={'/'} style={{textDecoration:"none"}}>
+                            Home
+                        </Link>
                     </Typography>
+
                     <div>
                         <IconButton
                             size="large"
@@ -45,7 +51,7 @@ export default function MenuAppBar() {
                             onClick={handleMenu}
                             color="inherit"
                         >
-                            <AccountCircle sx={{color:"#333333"}}/>
+                            <AccountCircle sx={{color: "#333333"}}/>
                         </IconButton>
                         <Menu
                             id="menu-appbar"
